@@ -21,13 +21,14 @@ This project uses the [**FC 26 (FIFA 26) Player Data**](https://www.kaggle.com/d
 
 The dataset was created for educational and research purposes and is used in accordance with the license specified by the dataset author.
 
-The original dataset is not included in this repository.
+The dataset is included in this repository for use by the deployed application.
 
 ## Project Structure
 
 ```text
 FC26/
 ├── app.py
+├── FC26_20250921.csv
 ├── fc26_exploration.ipynb
 ├── requirements.txt
 ├── README.md
