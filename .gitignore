@@ -1,0 +1,7 @@
+*.csv
+archive.zip
+.ipynb_checkpoints/
+.vscode/
+__pycache__/
+.venv/
+venv/
