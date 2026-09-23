@@ -1,24 +1,30 @@
 import streamlit as st
 import pandas as pd
 
-if 'search_results' not in st.session_state:
-    st.session_state.search_results = None
+DEFAULTS = {
+    'player_name': '',
+    'position': [],
+    'overall': (47, 91),
+    'potential': (49, 95),
+    'age': (16, 44),
+    'league': 'Any League',
+    'club': 'Any Club',
+    'nationality': 'Any Nationality',
+    'height': (155, 210),
+    'min_value': None,
+    'max_value': None,
+    'weak_foot': (1, 5),
+    'skill_moves': (1, 5),
+    'search_results': None,
+}
+
+for k, v in DEFAULTS.items():
+    if k not in st.session_state:
+        st.session_state[k] = v
 
 def reset_filters():
-    st.session_state.player_name = ''
-    st.session_state.position = []
-    st.session_state.overall = (47, 91)
-    st.session_state.potential = (49, 95)
-    st.session_state.age = (16, 44)
-    st.session_state.league = 'Any League'
-    st.session_state.club = 'Any Club'
-    st.session_state.nationality = 'Any Nationality'
-    st.session_state.height = (155, 210)
-    st.session_state.min_value = None
-    st.session_state.max_value = None
-    st.session_state.weak_foot = (1, 5)
-    st.session_state.skill_moves = (1, 5)
-    st.session_state.search_results = None
+    for k, v in DEFAULTS.items():
+        st.session_state[k] = v
 
 st.title("FC 26 PlayerFinder")
 
