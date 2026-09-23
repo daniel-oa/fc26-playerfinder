@@ -20,7 +20,7 @@ def reset_filters():
     st.session_state.skill_moves = (1, 5)
     st.session_state.search_results = None
 
-st.title("FC 26 Player Finder")
+st.title("FC 26 PlayerFinder")
 
 @st.cache_data
 def load_data():

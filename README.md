@@ -1,4 +1,4 @@
-# FC 26 Player Finder
+# FC 26 PlayerFinder
 
 A Streamlit web application for filtering and exploring FC 26 player data based on player attributes and preferences.
 
@@ -62,7 +62,7 @@ The application will open in your browser.
 
 ## Project Scope
 
-This is **Version 1** of the FC 26 Player Finder.
+This is **Version 1** of the FC 26 PlayerFinder.
 
 The current version focuses on player filtering and data exploration. Features such as player comparison, player similarity, ranking systems, scouting recommendations, and machine learning are outside the scope of this version.
 
